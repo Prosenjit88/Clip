@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Train</folder>
+	<filename>Altair 2.png</filename>
+	<path>D:\Docs\On job study\Deep learning\Ubisoft assignment\Assignment\Assignment\Train\Altair 2.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1070</width>
+		<height>803</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>clip</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>466</xmin>
+			<ymin>612</ymin>
+			<xmax>497</xmax>
+			<ymax>645</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>clip</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>546</xmin>
+			<ymin>588</ymin>
+			<xmax>572</xmax>
+			<ymax>611</ymax>
+		</bndbox>
+	</object>
+</annotation>

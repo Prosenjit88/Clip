@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Train</folder>
+	<filename>Elexis 5.png</filename>
+	<path>D:\Docs\On job study\Deep learning\Ubisoft assignment\Assignment\Assignment\Train\Elexis 5.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>437</width>
+		<height>686</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>clip</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>280</xmin>
+			<ymin>336</ymin>
+			<xmax>322</xmax>
+			<ymax>521</ymax>
+		</bndbox>
+	</object>
+</annotation>

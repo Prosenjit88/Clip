@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Test</folder>
+	<filename>Elexis Test 1.png</filename>
+	<path>D:\Docs\On job study\Deep learning\Ubisoft assignment\Assignment\Assignment\Test\Elexis Test 1.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1886</width>
+		<height>688</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>clip</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>875</xmin>
+			<ymin>262</ymin>
+			<xmax>890</xmax>
+			<ymax>298</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>clip</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>921</xmin>
+			<ymin>240</ymin>
+			<xmax>941</xmax>
+			<ymax>270</ymax>
+		</bndbox>
+	</object>
+</annotation>

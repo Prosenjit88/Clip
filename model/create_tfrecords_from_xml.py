@@ -51,8 +51,6 @@ def dict_to_tf_example(data, image_dir, label_map_dict):
         encoded_jpg = fid.read()
     encoded_jpg_io = io.BytesIO(encoded_jpg)
     image = PIL.Image.open(encoded_jpg_io)
-    if image.format != 'JPEG':
-        raise ValueError('Image format not JPEG')
     key = hashlib.sha256(encoded_jpg).hexdigest()
 
     width = int(data['size']['width'])

@@ -3,6 +3,7 @@ from keras.preprocessing.image import img_to_array
 from keras.preprocessing.image import load_img
 import numpy as np
 import argparse
+omport os
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()

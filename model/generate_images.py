@@ -51,7 +51,7 @@ def gen_images(path):
 
 
 def main():
-        files =  os.listdir('/content/output')
+        files =  os.listdir(args["image"])
         for file in files:
                 gen_images(file)
 

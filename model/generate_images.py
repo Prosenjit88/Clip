@@ -7,7 +7,7 @@ import argparse
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
-	help="path to the input image")
+	help="path to the input image folder")
 ap.add_argument("-o", "--output", required=True,
 	help="path to output directory to store augmentation examples")
 ap.add_argument("-t", "--total", type=int, default=20,
@@ -33,16 +33,28 @@ aug = ImageDataGenerator(
 total = 0
 
 # construct the actual Python generator
-print("[INFO] generating images...")
-imageGen = aug.flow(image, batch_size=1, save_to_dir=args["output"],
+
+def gen_images(path):
+        print("[INFO] generating images...")
+        imageGen = aug.flow(path, batch_size=1, save_to_dir=args["output"],
 	save_prefix="image", save_format="jpg")
  
-# loop over examples from our image data augmentation generator
-for image in imageGen:
-	# increment our counter
-	total += 1
+        # loop over examples from our image data augmentation generator
+        for image in imageGen:
+                # increment our counter
+                total += 1
  
-	# if we have reached the specified number of examples, break
-	# from the loop
-	if total == args["total"]:
-		break
+                # if we have reached the specified number of examples, break
+                # from the loop
+                if total == args["total"]:
+                        break
+
+
+def main():
+        files =  os.listdir('/content/output')
+        for file in files:
+                gen_images(file)
+
+
+if __name__ == '__main__':
+    main()

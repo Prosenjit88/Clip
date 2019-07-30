@@ -35,7 +35,7 @@ total = 0
 # construct the actual Python generator
 print("[INFO] generating images...")
 imageGen = aug.flow(image, batch_size=1, save_to_dir=args["output"],
-	save_prefix="image", save_format="jpg")
+	save_prefix="image", save_format="png")
  
 # loop over examples from our image data augmentation generator
 for image in imageGen:

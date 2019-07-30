@@ -6,8 +6,8 @@ import argparse
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--input", required=True,
-	help="path to the input image folder")
+ap.add_argument("-i", "--image", required=True,
+	help="path to the input image")
 ap.add_argument("-o", "--output", required=True,
 	help="path to output directory to store augmentation examples")
 ap.add_argument("-t", "--total", type=int, default=20,
@@ -25,7 +25,7 @@ image = np.expand_dims(image, axis=0)
 # initialize the total number of images generated thus far
 aug = ImageDataGenerator(
 	rotation_range=80,
-        shear_range=1,
+        shear_range=0.5,
         horizontal_flip=True,
         vertical_flip=True,
         fill_mode='nearest')
@@ -35,7 +35,7 @@ total = 0
 # construct the actual Python generator
 print("[INFO] generating images...")
 imageGen = aug.flow(image, batch_size=1, save_to_dir=args["output"],
-	save_prefix="image", save_format="png")
+	save_prefix="image", save_format="jpg")
  
 # loop over examples from our image data augmentation generator
 for image in imageGen:

@@ -1,0 +1,38 @@
+<annotation>
+	<folder>image</folder>
+	<filename>image_0_804.jpg</filename>
+	<path>D:\Docs\On job study\Deep learning\Ubisoft assignment\Assignment\Assignment\image\image_0_804.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1070</width>
+		<height>803</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>clip</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>574</xmin>
+			<ymin>576</ymin>
+			<xmax>604</xmax>
+			<ymax>610</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>clip</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>654</xmin>
+			<ymin>571</ymin>
+			<xmax>694</xmax>
+			<ymax>606</ymax>
+		</bndbox>
+	</object>
+</annotation>

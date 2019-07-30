@@ -1,5 +1,4 @@
-# This is an example of using 
-# https://github.com/tensorflow/models/blob/master/research/object_detection/dataset_tools/create_pascal_tf_record.py
+# Use this script to create tfrecord file from Pascal VOC format dataset
 # The structure should be like PASCAL VOC format dataset
 # +Dataset
 #   +Annotations

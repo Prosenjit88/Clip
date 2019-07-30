@@ -10,7 +10,7 @@ ap.add_argument("-i", "--image", required=True,
 	help="path to the input image")
 ap.add_argument("-o", "--output", required=True,
 	help="path to output directory to store augmentation examples")
-ap.add_argument("-t", "--total", type=int, default=100,
+ap.add_argument("-t", "--total", type=int, default=20,
 	help="# of training samples to generate")
 args = vars(ap.parse_args())
 

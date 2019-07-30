@@ -14,12 +14,6 @@ ap.add_argument("-t", "--total", type=int, default=20,
 	help="# of training samples to generate")
 args = vars(ap.parse_args())
 
-# load the input image, convert it to a NumPy array, and then
-# reshape it to have an extra dimension
-print("[INFO] loading example image...")
-image = load_img(args["image"])
-image = img_to_array(image)
-image = np.expand_dims(image, axis=0)
  
 # construct the image generator for data augmentation then
 # initialize the total number of images generated thus far
@@ -34,9 +28,9 @@ total = 0
 
 # construct the actual Python generator
 
-def gen_images(path):
+def gen_images(image):
         print("[INFO] generating images...")
-        imageGen = aug.flow(path, batch_size=1, save_to_dir=args["output"],
+        imageGen = aug.flow(image, batch_size=1, save_to_dir=args["output"],
 	save_prefix="image", save_format="jpg")
  
         # loop over examples from our image data augmentation generator
@@ -51,9 +45,13 @@ def gen_images(path):
 
 
 def main():
+        print("[INFO] loading example image...")
         files =  os.listdir(args["image"])
         for file in files:
-                gen_images(file)
+                image = load_img(os.path.join(args["image"],file))
+                image = img_to_array(image)
+                image = np.expand_dims(image, axis=0)
+                gen_images(image)
 
 
 if __name__ == '__main__':

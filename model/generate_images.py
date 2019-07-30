@@ -25,12 +25,12 @@ aug = ImageDataGenerator(
         vertical_flip=True,
         fill_mode='nearest')
 
-total = 0
 
 # construct the actual Python generator
 
 def gen_images(image):
         print("[INFO] generating images...")
+        total = 0
         imageGen = aug.flow(image, batch_size=1, save_to_dir=args["output"],
 	save_prefix="image", save_format="jpg")
  

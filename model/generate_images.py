@@ -29,7 +29,6 @@ aug = ImageDataGenerator(
 # construct the actual Python generator
 
 def gen_images(image):
-        print("[INFO] generating images for {}".format(image))
         total = 0
         imageGen = aug.flow(image, batch_size=1, save_to_dir=args["output"],
 	save_prefix="image", save_format="jpg")
@@ -49,6 +48,7 @@ def main():
         print("[INFO] loading example image...")
         files =  os.listdir(args["image"])
         for file in files:
+                print("[INFO] generating images for {}".format(file))
                 image = load_img(os.path.join(args["image"],file))
                 image = img_to_array(image)
                 image = np.expand_dims(image, axis=0)
